@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <prices />
+    <get-account-state />
+    <get-eth-tx-for-withdraw />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Prices from './components/Prices.vue'
+import GetAccountState from './components/GetAccountState';
+import GetEthTxForWithdraw from './components/GetEthTxForWithdraw';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Prices,
+    GetAccountState,
+    GetEthTxForWithdraw
   }
 }
 </script>
@@ -21,7 +26,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
